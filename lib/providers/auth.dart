@@ -33,7 +33,7 @@ class Auth with ChangeNotifier {
   Future<void> _authenticate(
       String? email, String? password, String segmant) async {
     final url = Uri.parse(
-        'https://identitytoolkit.googleapis.com/v1/accounts:$segmant?key=AIzaSyCRtlrWUqZ1oy5dCZuJh5mr2H_bYe_NmdA');
+        //Google Api Key
     try {
       final response = await http.post(
         url,
